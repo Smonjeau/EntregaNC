@@ -57,18 +57,18 @@ export default {
     firstName: '',
     nameRules: [
       v => !!v || 'First name is required',
-      v => (v && v.length >= 1) || 'First Name must be more than 1 character',
+      v => (v && v.length > 1) || 'First Name must be more than 1 character',
     ],
     lastName: '',
     lastNameRules: [
       v => !!v || 'Last Name is required',
-      v => (v && v.length >= 1) || 'Last Name must be more than 1 character',
+      v => (v && v.length > 1) || 'Last Name must be more than 1 character',
     ],
 
     address : '',
     addressRules : [
       v => !!v || 'Address is required',
-      v => (v && v.length >= 1) || 'Address must be more than 1 character',
+      v => (v && v.length > 1) || 'Address must be more than 1 character',
     ],
     ssn : '',
     ssnRules: [
