@@ -73,7 +73,7 @@ export default {
     ssn : '',
     ssnRules: [
       v => !!v || 'SSN is required',
-      v => /^[0-9]{3}-[0-9]{2}-[0-9]{4}$/.test(v) || 'SSN must be valid',
+      v => /^[0-9]{3}-[0-9]{2}-[0-9]{4}$/.test(v) || 'SSN must be valid. Format: ###-##-####',
     ],
   }),
 
@@ -92,6 +92,7 @@ export default {
 
       }).then(() => {
         this.$emit("memberInsertion")
+        this.alert = false
         console.log("Creado con exito")
       })
       .catch(error=>{
