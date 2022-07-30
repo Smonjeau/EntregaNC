@@ -1,19 +1,24 @@
 <template>
-  <div>
+  <v-app>
     <HeaderComponent/>
-    <v-container>
-      <v-row>
-        <v-col cols="5">
-          <FormComponent @memberInsertion="reloadData"/>
-        </v-col>
-        <v-col cols="7">
-          <MembersListComponent :items="items"/>
-        </v-col>
 
-      </v-row>
-    </v-container>
+    <v-content>
+      <v-container>
+        <v-row>
+          <v-col cols="5">
+            <FormComponent @memberInsertion="reloadData"/>
+          </v-col>
+          <v-col cols="7">
+            <MembersListComponent :items="items"/>
+          </v-col>
+
+        </v-row>
+      </v-container>
+    </v-content>
+
     <FooterComponent/>
-  </div>
+
+  </v-app>
 
 </template>
 

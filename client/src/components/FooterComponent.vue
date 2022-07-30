@@ -1,18 +1,11 @@
 <template>
-  <v-footer
-      color="primary lighten-1"
-      padless
-      fixed
-  >
+  <v-footer color="primary lighten-1">
     <v-row
         justify="center"
-        no-gutters
-
-    >
+        no-gutters>
       <p
           v-for="i in info"
           :key="i"
-
 
           class="my-2 ml-7 white--text"
       >
